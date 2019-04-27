@@ -26,8 +26,7 @@ public class StarbuzzDatabaseHelper extends SQLiteOpenHelper {
         updateMyDatabase(db, oldVersion, newVersion);
     }
 
-    private static void insertDrink(SQLiteDatabase db, String name, String description,
-                                    int resourceId) {
+    private static void insertDrink(SQLiteDatabase db, String name, String description, int resourceId) {
         ContentValues drinkValues = new ContentValues();
         drinkValues.put("NAME", name);
         drinkValues.put("DESCRIPTION", description);
